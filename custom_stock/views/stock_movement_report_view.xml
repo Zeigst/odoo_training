@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_stock_movement_report_tree" model="ir.ui.view">
+        <field name="name">stock.movement.report.tree</field>
+        <field name="model">stock.movement.report</field>
+        <field name="arch" type="xml">
+            <tree string="Stock Movement Report">
+                <field name="product_id"/>
+                <field name="uom_id"/>
+                <field name="start_qty"/>
+                <field name="start_value"/>
+                <field name="received_qty"/>
+                <field name="received_value"/>
+                <field name="delivered_qty"/>
+                <field name="delivered_value"/>
+                <field name="end_qty"/>
+                <field name="end_value"/>
+
+                <header>
+                    <button name="action_export_xlsx" type="object" string="Export to Excel" class="oe_highlight" />
+                </header>
+            </tree>
+        </field>
+    </record>
+</odoo>

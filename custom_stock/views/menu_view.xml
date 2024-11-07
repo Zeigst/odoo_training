@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="action_stock_movement_report_wizard" model="ir.actions.act_window">
+        <field name="name">Stock Movement Report Wizard</field>
+        <field name="res_model">stock.movement.report.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem 
+        id="menu_stock_movement_report_wizard" 
+        name="Stock Movement Report" 
+        parent="stock.menu_warehouse_report" 
+        action="action_stock_movement_report_wizard"
+    />
+
+</odoo>
