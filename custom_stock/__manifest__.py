@@ -12,7 +12,6 @@
     "data": [
         "security/ir.model.access.csv",
         "views/stock_movement_report_wizard_view.xml",
-        "views/stock_movement_report_view.xml",
         "views/menu_view.xml",
     ],
     "license": "LGPL-3"
