@@ -11,6 +11,8 @@
     "depends": ["base", "stock"],
     "data": [
         "security/ir.model.access.csv",
+        "views/stock_period_view.xml",
+        "views/stock_quant_period_view.xml",
         "views/stock_movement_report_wizard_view.xml",
         "views/menu_view.xml",
     ],

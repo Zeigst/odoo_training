@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="stock_quant_period_tree_view" model="ir.ui.view">
+        <field name="name">stock.quant.period.tree</field>
+        <field name="model">stock.quant.period</field>
+        <field name="arch" type="xml">
+            <tree string="Stock Quant Periods">
+                <field name="product_id"/>
+                <field name="quantity"/>
+            </tree>
+        </field>
+    </record>
+
+</odoo>

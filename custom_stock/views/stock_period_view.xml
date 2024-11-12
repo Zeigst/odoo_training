@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="stock_period_form_view" model="ir.ui.view">
+        <field name="name">stock.period.form</field>
+        <field name="model">stock.period</field>
+        <field name="arch" type="xml">
+            <form string="Stock Period">
+                <sheet>
+                    <group>
+                        <field name="date"/>
+                        <field name="location_id"/>
+                    </group>
+                    <group string="Products" colspan="4">
+                        <field name="stock_quant_period_ids" nolabel="1" colspan="2">
+                            <tree string="Product Quantities">
+                                <field name="product_id"/>
+                                <field name="quantity"/>
+                            </tree>
+                        </field>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="stock_period_tree_view" model="ir.ui.view">
+        <field name="name">stock.period.tree</field>
+        <field name="model">stock.period</field>
+        <field name="arch" type="xml">
+            <tree string="Stock Periods">
+                <field name="date"/>
+                <field name="location_id"/>
+            </tree>
+        </field>
+    </record>
+
+</odoo>
